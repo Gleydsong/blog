@@ -1,3 +1,4 @@
+import { Footer } from "../footer";
 import { Header } from "../header";
 
 export const Layout = ({ children }: { children: React.ReactNode }) => {
@@ -8,6 +9,7 @@ export const Layout = ({ children }: { children: React.ReactNode }) => {
             <main className="flex-1 flex flex-col mb-12">
                 {children}
             </main>
+            <Footer />
         </div>
 
     );
