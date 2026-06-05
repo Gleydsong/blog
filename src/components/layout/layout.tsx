@@ -1,16 +1,21 @@
+import { Inter } from "next/font/google";
 import { Footer } from "../footer";
 import { Header } from "../header";
 
-export const Layout = ({ children }: { children: React.ReactNode }) => {
-    return (
-        <div className="relative flex min-h-screen flex-col dark">
+type LayoutProps = {
+  children: React.ReactNode;
+};
 
-            <Header />
-            <main className="flex-1 flex flex-col mb-12">
-                {children}
-            </main>
-            <Footer />
-        </div>
+const inter = Inter({ subsets: ["latin"] });
 
-    );
+export const Layout = ({ children }: LayoutProps) => {
+  return (
+    <div
+      className={`${inter.className} relative flex min-h-screen flex-col bg-gray-700`}
+    >
+      <Header />
+      <main className="mb-12 flex flex-1 flex-col">{children}</main>
+      <Footer />
+    </div>
+  );
 };

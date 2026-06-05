@@ -1,5 +1,7 @@
 {
   "editor.wordWrap": "on",
   "editor.wrappingIndent": "indent",
-  "editor.wrappingStrategy": "advanced"
+  "editor.wrappingStrategy": "advanced",
+  "typescript.tsdk": "node_modules/typescript/lib",
+  "typescript.enablePromptUseWorkspaceTsdk": true
 }
