@@ -1,7 +1,7 @@
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
-import { ActiveLink } from "../active-link";
-import { Logo } from "../logo";
+import { ActiveLink } from "../../active-link";
+import { Logo } from "../../logo";
 
 export const Header = () => {
   return (
