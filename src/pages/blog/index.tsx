@@ -1,4 +1,5 @@
 import allPosts from "contentlayer/generated";
+import { Search } from "@/components/search";
 
 export default function BlogPage() {
   return (
@@ -15,9 +16,11 @@ export default function BlogPage() {
               Dicas e Estratégias para impulsionar o seu negócio
             </h1>
           </div>
+          {/* SEARCH BAR */}
+          <Search />
         </div>
       </header>
-      {/*SEARCH BAR*/}
+
       {/* POSTS */}
     </div>
   );
